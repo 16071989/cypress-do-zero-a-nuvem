@@ -5,14 +5,14 @@
 }
 
 #title {
-    color: #fec7d7;
+    color: #fffffe;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #subtitle {
-    color: #fec7d7;
+    color: #fffffe;
     text-align: center;
 }
 
@@ -35,6 +35,7 @@ input, select, textarea, button {
 
 .field {
     margin-bottom: 1em;
+
 }
 
 .field label {
@@ -69,14 +70,14 @@ textarea {
 }
 
 .field input:focus, .field select:focus, .field textarea:focus {
-    background-color: #fec7d7;
+    background-color: #fffffe;
 }
 
 .button {
     font-size: 1.2em;
-    background: #0e172c;
+    background: #4fc4cf;
     border: #181818 solid 2px;
-    color: #fffffe;
+    color: #181818;
     padding: 0.8em 1.2em;
     font-weight: bold;
     margin: auto;
@@ -85,9 +86,9 @@ textarea {
 }
 
 .button:hover {
-    background: #fffffe;
-    border: #0e172c solid 2px;
-    color: #0e172c;
+    background: #181818;
+    border: #4fc4cf solid 2px;
+    color: #4fc4cf;
 }
 
 #check {
@@ -104,7 +105,7 @@ textarea {
 }
 
 #white-background {
-    background:#fec7d7;
+    background:#fffffe;
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
@@ -115,19 +116,24 @@ input[type="radio"] {
 }
 
 .success {
-    background-color: #d9d4e7;
-}
-
-.error {
-    background-color: #a786df;
-}
-
-.success, .error {
     display: none;
+    background-color: #4fc4cf;
     color: #181818;
     padding: 8px 10px;
     border-radius: 5px;
     margin-bottom: 12px;
+}
+
+.error {
+    display: none;
+    background-color: #fbdd74;
+    color: #181818;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.success, .error {
     text-align: center;
 }
 
@@ -150,13 +156,12 @@ input[type="radio"] {
 }
 
 #privacy a {
-    color: #0e172c;
+    color: #4fc4cf;
     font-weight: bold;
-    text-decoration: none;
 }
 
 #privacy a:hover {
-    text-decoration: underline;
+    color: #181818;
 }
 
 .privacy h2 {
