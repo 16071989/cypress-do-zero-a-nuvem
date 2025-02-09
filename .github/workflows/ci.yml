@@ -9,7 +9,14 @@ jobs:
       - name: Cache Cypress dependencies
         uses: cypress-io/github-action@v2
         with:
-          cache: 'true'
+           config-file: cypress.config.ts
+           record: true
+           parallel: true
+           group: 'UI - Chrome'
+           install-command: yarn --immutable
+           browser: chrome
+           headless: true
+           cache: 'true'
 
       - name: Install dependencies
         run: npm ci
